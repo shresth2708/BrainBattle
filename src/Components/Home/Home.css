@@ -4,7 +4,7 @@
   
   .hero-section {
     background-color: #e6e6fa;
-    min-height: calc(100vh - 60px);
+    min-height: 50vh;
     padding: 4rem 8%;
     display: flex;
     align-items: center;
