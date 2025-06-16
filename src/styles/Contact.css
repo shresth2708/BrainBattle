@@ -1,6 +1,6 @@
 .contact-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .contact-container h2 {
@@ -47,6 +47,8 @@
   transition: border-color 0.2s ease;
   background-color: white;
   color: #46211A;
+  transform-origin: left;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus, 
@@ -54,6 +56,8 @@
   border-color: #20a499;
   outline: none;
   background-color: white;
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(32, 47, 164, 0.1);
 }
 
 .form-group input::placeholder, 
@@ -72,10 +76,18 @@
   cursor: pointer;
   transition: background-color 0.2s ease;
   margin-top: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .submit-button:hover {
   background-color: #46211A;
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
 }
 
 .form-success {
@@ -84,6 +96,18 @@
   padding: 0.75rem;
   border-radius: 4px;
   margin-bottom: 1.25rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 768px) {

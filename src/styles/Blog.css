@@ -1,6 +1,6 @@
 .blog-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .blog-container h2 {
@@ -24,6 +24,8 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0;
+  animation: slideUp 0.5s ease-out;
+  will-change: transform;
 }
 
 .blog-post:hover {
@@ -49,6 +51,11 @@
   object-fit: cover;
   display: block;
   border-left: 3px solid #F1D3B2;
+  transition: transform 0.5s ease;
+}
+
+.blog-post:hover .blog-post-image img {
+  transform: scale(1.1);
 }
 
 .blog-post h3 {
@@ -144,5 +151,16 @@
   .post-meta {
     flex-direction: column;
     gap: 0.25rem;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
