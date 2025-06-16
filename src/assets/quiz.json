@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Multi Language",
+      "Hyperlink and Text Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correctAnswer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a JavaScript framework?",
+    "options": [
+      "Python",
+      "Django",
+      "React",
+      "Java"
+    ],
+    "correctAnswer": "React"
+  },
+  {
+    "id": 3,
+    "question": "CSS stands for?",
+    "options": [
+      "Computer Style Sheets",
+      "Creative Style System",
+      "Cascading Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets"
+  },
+  {
+    "id": 4,
+    "question": "Which HTML tag is used to define an internal style sheet?",
+    "options": [
+      "<script>",
+      "<css>",
+      "<style>",
+      "<link>"
+    ],
+    "correctAnswer": "<style>"
+  },
+  {
+    "id": 5,
+    "question": "What is the correct way to declare a JavaScript variable?",
+    "options": [
+      "variable name = value;",
+      "v name = value;",
+      "var name = value;",
+      "val name = value;"
+    ],
+    "correctAnswer": "var name = value;"
+  }
+]

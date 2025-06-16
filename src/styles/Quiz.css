@@ -1,0 +1,129 @@
+.quiz-container {
+  max-width: 650px;
+  min-width: 450px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 50px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.question-section {
+  margin-bottom: 30px;
+}
+
+.question-count {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.question-count span {
+  font-weight: bold;
+  color: #333;
+}
+
+.question-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.option-button {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #e9ecef;
+}
+
+.option-button.selected {
+  background-color: #4c6ef5;
+  color: white;
+  border-color: #4c6ef5;
+}
+
+.next-button {
+  background-color: #4c6ef5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #3b5bdb;
+}
+
+.next-button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.score-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.score-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.score-section p {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.restart-button {
+  background-color: #4c6ef5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #3b5bdb;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 480px) {
+  .quiz-container {
+    min-width: auto;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .question-text {
+    font-size: 20px;
+  }
+}

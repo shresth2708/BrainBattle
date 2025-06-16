@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="navigation">
         <ul>
           <li><NavLink to="/" end>Home</NavLink></li>
-          {/* <li><NavLink to="/quizzes">Quizzes</NavLink></li> */}
+          <li><NavLink to="/quizzes">Quizzes</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/services">Services</NavLink></li>
           <li><NavLink to="/blog">Blog</NavLink></li>

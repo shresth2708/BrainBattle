@@ -6,6 +6,7 @@ import Blog from './pages/Blog';
 import Footer from './Components/Footer/Footer';  
 import Contact from './pages/Contact';
 import Services from './pages/Services';
+import Quiz from './pages/Quiz';
 import './App.css'; 
 
 
@@ -15,7 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/quizzes" element={<Quizzes />} /> */}
+        <Route path="/quizzes" element={<Quiz />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
