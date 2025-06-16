@@ -10,29 +10,17 @@ const Navbar = () => {
         <span className="logo-text">BrainBattle</span>
       </Link>
       
-      <div className="navbar-links">
-        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} end>
-          <span className="icon">🏠</span>
-          Home
-        </NavLink>
-        <NavLink to="/quizzes" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          <span className="icon">📋</span>
-          Quizzes
-        </NavLink>
-        <NavLink to="/leaderboard" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          <span className="icon">🏆</span>
-          Leaderboard
-        </NavLink>
-        <NavLink to="/profile" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          <span className="icon">👤</span>
-          Profile
-        </NavLink>
-      </div>
-      
-      <div className="navbar-auth">
-        <Link to="/login" className="login-btn">Login</Link>
-        <Link to="/signup" className="signup-btn">Sign Up</Link>
-      </div>
+      <nav className="navigation">
+        <ul>
+          <li><NavLink to="/" end>Home</NavLink></li>
+          {/* <li><NavLink to="/quizzes">Quizzes</NavLink></li> */}
+          <li><NavLink to="/about">About</NavLink></li>
+          {/* <li><NavLink to="/services">Services</NavLink></li> */}
+          <li><NavLink to="/blog">Blog</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
+        </ul>
+      </nav>
+
     </nav>
   );
 };
